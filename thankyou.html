@@ -43,15 +43,31 @@
       color: #777;
     }
   </style>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-V7TNQNCYLE"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-V7TNQNCYLE');
+</script>
 </head>
 <body>
   <h1>🎉 Thank You!</h1>
   <p>Your payment was successful. You're now part of the awakening movement 💫</p>
   <p>Click below to download your book:</p>
 
-  <a href="downloads/FINALBOOK.pdf" download class="download-button">
-    📥 Download Awakening Through AI
-  </a>
+<a href="downloads/FINALBOOK.pdf" 
+   onclick="gtag('event', 'download', {
+     'event_category': 'Book',
+     'event_label': 'Awakening Through AI'
+   });"
+   download 
+   class="download-button">
+   📥 Download Awakening Through AI
+</a>
+
 
   <div class="footer">
     <p>If you have any issues with your download, email me at <strong>katproai9@gmail.com</strong></p>
